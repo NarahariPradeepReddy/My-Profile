@@ -7,7 +7,7 @@ export default function Header() {
       <div style={headerContentStyle}>
         <div style={textContentStyle}>
           <h1>NARAHARI PRADEEP KUMAR REDDY</h1>
-          <p>ReactJs Developer</p>
+          <p style={{fontSize: "16px", fontWeight: 500}}>ReactJs Developer</p>
           <a href="mailto:pradeepnarahari294@gamil.com">
             pradeepnarahari294@gamil.com
           </a>
@@ -20,7 +20,8 @@ export default function Header() {
 const headerStyle = {
   backgroundColor: "#4CAF50",
   color: "#ffff",
-  padding: "10px 0px",
+  padding: "12px 0px",
+  margin: '20px'
 };
 
 const headerContentStyle = {

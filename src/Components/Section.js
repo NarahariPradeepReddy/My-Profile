@@ -16,5 +16,5 @@ const sectionStyle = {
     backgroundColor: "#ffff",
     backgroundRadius: "8px",
     padding: "3px",
-    boxShadow: "1px 5px 10px #4CAF50"
+    boxShadow: "1px 1px 7px #4CAF50"
 }
