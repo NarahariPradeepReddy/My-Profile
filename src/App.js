@@ -3,13 +3,14 @@ import React from 'react';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Section from './Components/Section';
+import { Typography } from '@mui/material';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Section title="About Me"/>
-      <p>My name is Narahari Pradeep Kumar Reddy, I have a total of 6 years of IT experiance relevent to react I have 1.2 years where I used to work on HTML, CSS, JavaScripts and Reactjs</p>
+      <Typography sx={{margin: "20px" }}>My name is Narahari Pradeep Kumar Reddy, I have a total of 6 years of IT experiance relevent to react I have 1.2 years where I used to work on HTML, CSS, JavaScripts and Reactjs</Typography>
       <Section title="Skills"/>
       <ul>
                     <li>HTML</li>
