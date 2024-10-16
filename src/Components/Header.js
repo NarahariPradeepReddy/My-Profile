@@ -1,44 +1,56 @@
 import React from "react";
+import { Box, Typography, Link, Avatar } from '@mui/material';
 import Profilephoto from "../Images/Profilephoto.jpg";
 
 export default function Header() {
   return (
-    <header style={headerStyle}>
-      <div style={headerContentStyle}>
-        <div style={textContentStyle}>
-          <h1>NARAHARI PRADEEP KUMAR REDDY</h1>
-          <p style={{fontSize: "16px", fontWeight: 500}}>ReactJs Developer</p>
-          <a href="mailto:pradeepnarahari294@gamil.com">
+    <Box component="header" sx={headerStyle}>
+      <Box sx={headerContentStyle}>
+        <Box sx={textContentStyle}>
+          <Typography variant="h4" component="h1" sx={{ fontWeight: 600 }}>
+            Narahari Pradeep Kumar Reddy
+          </Typography>
+          <Typography variant="subtitle1" sx={{ fontSize: "18px" }}>
+            React.js Developer
+          </Typography>
+          <Link href="mailto:pradeepnarahari294@gamil.com" sx={linkStyle}>
             pradeepnarahari294@gamil.com
-          </a>
-        </div>
-        <img src={Profilephoto} alt="Profilephoto" style={imageStyle} />
-      </div>
-    </header>
+          </Link>
+        </Box>
+        <Avatar src={Profilephoto} alt="Profile" sx={avatarStyle} />
+      </Box>
+    </Box>
   );
 }
+
 const headerStyle = {
   backgroundColor: "#4CAF50",
-  color: "#ffff",
-  padding: "12px 0px",
-  margin: '20px'
+  color: "#ffffff",
+  padding: "40px 0",
+  marginBottom: "20px",
+  textAlign: "center",
 };
 
 const headerContentStyle = {
-  alignItems: "center",
   display: "flex",
+  alignItems: "center",
   justifyContent: "space-between",
-  margin: "0 auto",
   maxWidth: "800px",
+  margin: "0 auto",
 };
 
 const textContentStyle = {
-  felx: "1",
+  flex: "1",
 };
 
-const imageStyle = {
-  height: "100px",
+const linkStyle = {
+  color: "#ffffff",
+  textDecoration: "none",
+  marginTop: "8px",
+};
+
+const avatarStyle = {
   width: "100px",
-  borderRadius: "50%",
+  height: "100px",
   marginLeft: "20px",
 };
