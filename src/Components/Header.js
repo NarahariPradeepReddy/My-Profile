@@ -7,7 +7,7 @@ export default function Header() {
     <Box component="header" sx={headerStyle}>
       <Box sx={headerContentStyle}>
         <Box sx={textContentStyle}>
-          <Typography variant="h4" component="h1" sx={{ fontWeight: 600 }}>
+          <Typography variant="h4" component="h1" sx={{ fontWeight: 550 }}>
             Narahari Pradeep Kumar Reddy
           </Typography>
           <Typography variant="subtitle1" sx={{ fontSize: "18px" }}>
