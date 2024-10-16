@@ -14,7 +14,7 @@ export default function Header() {
             React.js Developer
           </Typography>
           <Link href="mailto:pradeepnarahari294@gamil.com" sx={linkStyle}>
-            pradeepnarahari294@gamil.com
+           npradeepkumar890@gmail.com
           </Link>
         </Box>
         <Avatar src={Profilephoto} alt="Profile" sx={avatarStyle} />
